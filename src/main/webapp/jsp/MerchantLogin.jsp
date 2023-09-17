@@ -6,9 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Home</h1>
-     <a href="/admin/login"><button>Admin</button></a>
-     <a href="/customer/login"><button>Customer</button></a>
-     <a href="/merchant/login"><button>Merchant</button></a>
+    <h1>Merchant Login</h1>
+    <a href="/merchant/signup">Create Account</a>
 </body>
 </html>
