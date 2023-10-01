@@ -78,6 +78,7 @@
 <body>
     <h1>Merchant Login</h1>
     <form action="">
+        <h3>${pass}</h3>
         <fieldset>
             <legend>Login Here,</legend>
             <table>
