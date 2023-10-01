@@ -15,6 +15,13 @@
             color: #333;
         }
 
+        h3{
+            color:green;
+        }
+        h2{
+            color:red;
+        }
+
         form {
             background-color: #fff;
             border-radius: 5px;
@@ -77,8 +84,9 @@
 </head>
 <body>
     <h1>Merchant Login</h1>
-    <form action="">
+    <form action="/merchant/login" method="post">
         <h3>${pass}</h3>
+        <h2>${fail}</h2>
         <fieldset>
             <legend>Login Here,</legend>
             <table>
@@ -104,5 +112,17 @@
     </form>
     <br>
     <a href="/"><button>Back</button></a>
+    <script>
+        setTimeout(function () {
+            var h2Element = document.querySelector("h2");
+            var h3Element = document.querySelector("h3");
+            if (h2Element) {
+                h2Element.style.display = "none";
+            }
+            if (h3Element) {
+                h3Element.style.display = "none";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>

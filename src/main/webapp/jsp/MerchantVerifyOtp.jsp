@@ -14,6 +14,9 @@
         h1 {
             color: #333;
         }
+        h2{
+            color: red;
+        }
 
         h3 {
             color: green;
@@ -29,7 +32,7 @@
         }
 
         input[type="number"] {
-            width: 100%;
+            width: 90%;
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
@@ -51,6 +54,7 @@
     </style>
 </head>
 <body>
+    <h2>${fail}</h2>
     <h3>${pass}</h3>
     <h1>Merchant Verify OTP</h1>
     <form action="/merchant/verify" method="post">
@@ -58,5 +62,17 @@
         Enter OTP: <input type="number" name="otp" required>
         <input type="submit" value="Submit">
     </form>
+    <script>
+        setTimeout(function () {
+            var h2Element = document.querySelector("h2");
+            var h3Element = document.querySelector("h3");
+            if (h2Element) {
+                h2Element.style.display = "none";
+            }
+            if (h3Element) {
+                h3Element.style.display = "none";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
